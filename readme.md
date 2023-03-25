@@ -55,6 +55,7 @@
 - [49. What is a const pointer and how is it different from a pointer to const ?](#q49)
 - [50. What is the diamond problem in multiple inheritance and how is it resolved in C++ ?](#q50)
 - [51. What is the difference between dynamic binding and static binding in C++ ?](#q51)
+- [52. What is abstract class ?](#q52)
 
 
 
@@ -1021,6 +1022,7 @@ The diamond problem is a common issue that arises in programming languages that 
 To resolve the diamond problem, C++ uses a technique called virtual inheritance. With virtual inheritance, only one copy of the common ancestor class is inherited, and it is shared among all the classes that inherit from it. This ensures that there is only one instance of the common ancestor's attributes and methods in the derived class, thus avoiding ambiguity.
 
 <div id="q51"></div>
+
 ## 51. What is the difference between dynamic binding and static binding in C++ ?
 Dynamic binding and static binding are two ways in which C++ resolves function calls at runtime.
 
@@ -1052,6 +1054,16 @@ int main() {
 }
 
 ```
+
+<div id="q52"></div>
+
+## 52. What is abstract class ?
+An abstract class serves as a blueprint for other classes and provides a common interface that subclasses can use to inherit the behavior of the abstract class. It defines a set of methods, but unlike a regular class, some or all of these methods are declared without any implementation.
+
+In order to use an abstract class, a subclass must provide concrete implementations for all the abstract methods declared in the abstract class. This ensures that any object created from the subclass can be used in the same way as an object created from the abstract class.
+
+Abstract classes can be used to enforce a consistent design pattern across related classes, or to define a set of standard methods that must be implemented by subclasses in order to comply with a particular specification or interface
+
 
 
 ## 🔗 Follow me for more update
